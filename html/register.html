@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="../libs/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../libs/toastr/toastr.min.css" rel="stylesheet"/>
+      <link href="../css/style.css" rel="stylesheet"/>
+  <title> Book Nest | Register </title>
+ </head>
+ <body>
+  <header>
+   <nav id="main-nav">
+    <div>
+      <a href="index.html" id="logo">Book Nest</a>
+     <button aria-controls="nav-links" aria-expanded="false" id="menu-button" type="button"> ☰ </button>
+     <ul id="nav-links">
+      <li> <a href="index.html"> Home </a> </li>
+      <li> <a href="books.html"> Books </a> </li>
+      <li> <a href="about.html"> About </a> </li>
+      <li> <a href="contact.html"> Contact </a> </li>
+      <li> <a href="login.html"> Login </a> </li>
+      <li> <a href="register.html"> Register </a> </li>
+     </ul>
+    </div>
+   </nav>
+  </header>
+  <main>
+   <section>
+    <h1>  Create Account</h1>
+    <form id="register-form">
+     <label for="register-name"> Full Name </label>
+     <input autocomplete="name" id="register-name" name="name" required="" type="text"/>
+     <small id="register-name-error">
+     </small>
+     <label for="register-email">Email </label>
+     <input autocomplete="email" id="register-email" name="email" required="" type="email"/>
+     <small id="register-email-error">
+     </small>
+     <label for="register-password">Password </label>
+     <input autocomplete="new-password" id="register-password" minlength="6" name="password" required="" type="password"/>
+     <small id="register-password-error">
+     </small>
+     <label for="confirm-password"> Confirm Password </label>
+     <input autocomplete="new-password" id="confirm-password" minlength="6" name="confirmPassword" required="" type="password"/>
+     <small id="confirm-password-error">
+     </small>
+     <button class="btn btn-dark mt-3" type="submit">Register</button>
+    </form>
+   </section>
+  </main>
+  <footer> Book Nest &copy; 2026 </footer>
+  <script src="../libs/jquery/jquery.min.js"> </script>
+  <script src="../libs/toastr/toastr.min.js"> </script>
+  <script src="../js/script.js"> </script>
+ </body>
+</html>

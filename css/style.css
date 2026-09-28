@@ -1,0 +1,261 @@
+body {
+    margin: 0;     /* يلغي المسافات */
+    font-family: Arial, sans-serif;
+    background: #f7f4ef;
+    color: #2f2b27;    /* نصوص افتراضية */
+}
+#main-nav {    
+    background: #2f2b27;
+    padding: 16px 6%;   /* مسافات داخل النص */
+}
+#main-nav > div {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo,
+#nav-links a {
+    color: white;
+    text-decoration: none;
+}
+#logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+#nav-links {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#nav-links a:hover {   /* تغير لون الروابط */
+    color: #e7c89b;
+}
+#menu-button {
+    display: none;
+    background: transparent; /* شفافة */
+    color: white;
+    border: 1px solid white;
+    font-size: 22px;
+    padding: 4px 9px;
+}
+main > section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 55px 6%;
+}
+#hero {
+    max-width: none;
+    background: #e7dfd3;
+    padding-bottom: 35px;
+}
+#hero > div {
+    max-width: 1100px;
+    margin: auto;
+}
+#hero h1 {
+    font-size: 48px;
+    margin-top: 0;
+}
+#hero p {
+    font-size: 19px;
+    max-width: 700px;
+}
+#featured-books,
+#books-list,
+#contact-content,
+#about-content {
+    display: grid;
+    gap: 25px;
+}
+#featured-books,
+#books-list {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+}
+
+#about-content {
+    grid-template-columns: repeat(2, 1fr);
+}
+#contact-content {
+    grid-template-columns: 1fr;
+    align-items: start;
+}
+
+#contact-content > article:first-child form {
+    max-width: 750px;
+    width: 100%;
+    margin: 30px auto;
+    box-sizing: border-box;
+}
+
+#contact-content > article:last-child {
+    width: 100%;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+.card {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+#contact-content .card {
+    height: auto;
+}
+
+.card > .btn:first-of-type {
+    margin-top: auto;
+}
+
+#books-list .card h2 {
+    min-height: 58px;
+}
+
+.card img {
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    display: block;
+    background: #f7f4ef;
+}
+footer {
+    background: #2f2b27;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    margin-top: 20px;
+}
+.card p {
+    color: #8a5a32;
+}
+#about-content img {
+    width: 100%;
+}
+form {
+    max-width: 550px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+input,
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font: inherit;
+}
+
+#contact-content textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+[id$="-error"] {
+    display: block;
+    min-height: 20px;
+    color: #b02a37;
+    font-size: 14px;
+    margin-top: 4px;
+}
+#social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+#social a {
+    color: #2f2b27;
+    font-size: 25px;
+}
+#social a:hover {
+    color: #8a5a32;
+}
+table {
+    width: 100%;
+    margin-top: 40px;
+    border-collapse: collapse;
+    background: white;
+}
+th,
+td {
+    border: 1px solid #ddd5c9;
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background: #e7dfd3;
+}
+@media (max-width: 800px) {
+    #menu-button {
+        display: block;
+    }
+    #nav-links {
+        display: none;
+        position: absolute;
+        top: 65px;
+        right: 6%;
+        background: #2f2b27;
+        padding: 18px;
+        flex-direction: column;
+        z-index: 10;
+    }
+    #nav-links.open {
+        display: flex;
+    }
+    #featured-books,
+    #books-list,
+    #contact-content,
+    #about-content {
+        grid-template-columns: 1fr 1fr;
+    }
+    #contact-content {
+        grid-template-columns: 1fr;
+    }
+    #contact-content > article:last-child {
+        width: 100%;
+        margin-top: 0;
+    }
+    #hero h1 {
+        font-size: 36px;
+    }
+}
+@media (max-width: 560px) {
+    #featured-books,
+    #books-list,
+    #contact-content,
+    #about-content {
+        grid-template-columns: 1fr;
+    }
+
+    #hero h1 {
+        font-size: 30px;
+    }
+}
+/* Page-specific slider */
+#wowslider-container1 {
+    width: 100% !important;
+    max-width: 980px !important;
+    margin: 35px auto 0 !important;
+    border-radius: 14px;
+    overflow: hidden;
+}
+#wowslider-container1 .ws_images img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+}

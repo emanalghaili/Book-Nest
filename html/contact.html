@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="../libs/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../libs/fontawesome/all.min.css" rel="stylesheet"/>
+  <link href="../libs/toastr/toastr.min.css" rel="stylesheet"/>
+  <link href="../css/style.css" rel="stylesheet"/>
+  <title> Book Nest | Contact </title>
+ </head>
+ <body>
+  <header>
+   <nav id="main-nav">
+    <div>
+     <a href="index.html" id="logo">Book Nest </a>
+     <button aria-controls="nav-links" aria-expanded="false" id="menu-button" type="button"> ☰ </button>
+     <ul id="nav-links">
+      <li> <a href="index.html"> Home </a> </li>
+      <li> <a href="books.html"> Books </a> </li>
+      <li> <a href="about.html"> About </a> </li>
+      <li> <a href="contact.html"> Contact </a> </li>
+      <li> <a href="login.html"> Login </a> </li>
+      <li> <a href="register.html"> Register </a> </li>
+     </ul>
+    </div>
+   </nav>
+  </header>
+  <main>
+   <section>
+    <h1>Contact Us </h1>
+     <div id="contact-content">
+     <article class="card p-4">
+
+      <h2>Send a Message </h2>
+      <form >
+       <label for="contact-name">Name</label>
+       <input autocomplete="name" id="contact-name" name="name" required="" type="text"/>
+       <small id="contact-name-error"></small>
+       
+       <label for="contact-email">Email </label>
+       <input autocomplete="email" id="contact-email" name="email" required="" type="email"/>
+       <small id="contact-email-error"> </small>
+      
+       <label for="message"> Message</label>
+       <textarea id="message" name="message" required="" rows="5"></textarea>
+       <small id="message-error"></small>
+       
+       <button class="btn btn-dark mt-3" type="submit">Send</button>
+    
+      </form>
+     </article>
+     <article class="card p-4">
+      <h2> Find Us </h2>
+      <p>
+       <i class="fa-solid fa-location-dot"></i>
+       Hadah Street
+      </p>
+      <p>
+       <i class="fa-solid fa-phone"></i>
+        +967 782935656
+      </p>
+      <p>
+       <i class="fa-solid fa-envelope"></i>
+        hello@booknest.com
+      </p>
+      <div id="social">
+       <a aria-label="Facebook" href="https://www.facebook.com" title="Facebook">
+        <i class="fa-brands fa-facebook"></i>
+       </a>
+       <a aria-label="Instagram" href="https://www.instagram.com" title="Instagram">
+        <i class="fa-brands fa-instagram"> </i>
+       </a>
+       <a aria-label="WhatsApp" href="https://www.whatsapp.com" title="WhatsApp">
+        <i class="fa-brands fa-whatsapp"> </i>
+       </a>
+       <a aria-label="Twitter" href="https://www.twitter.com" title="Twitter">
+        <i class="fa-brands fa-twitter"> </i>
+       </a>
+      </div><h2>Customer Support Hours</h2>
+
+      <table>
+        <thead>
+            <tr>
+              <th>Day</th>
+              <th>Hours</th>
+            </tr>
+        </thead>
+
+       <tbody>
+          <tr>
+             <td>Sunday – Thursday</td>
+             <td>9:00 AM – 6:00 PM</td>
+          </tr>
+
+          <tr>
+             <td>Friday</td>
+             <td>Closed</td>
+          </tr>
+
+          <tr>
+             <td>Saturday</td>
+             <td>10:00 AM – 4:00 PM</td>
+          </tr>
+        </tbody>
+    </table>
+    </article>
+    </div>
+   </section>
+  </main>
+  <footer> Book Nest &copy; 2026</footer>
+  <script src="../libs/jquery/jquery.min.js"></script>
+  <script src="../libs/toastr/toastr.min.js"> </script>
+  <script src="../js/script.js"></script>
+ </body>
+</html>
